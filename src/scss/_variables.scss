@@ -1,0 +1,46 @@
+$primaryColor: black;
+$secondaryColor: #eebc27;
+$backgroundColor: black;
+$textColor: white;
+
+$spacing: 12px;
+
+$headerFont: 50px;
+$subHeaderFont: 40px;
+$largeTextFont: 30px;
+$textFont: 18px;
+
+$xlScreenPixel: 1239px;
+$largeScreenPixel: 1023px;
+$mediumScreenPixel: 700px;
+$smallScreenPixel: 480px;
+
+@mixin xlScreen {
+  @media screen and (min-width: $xlScreenPixel) {
+    @content;
+  }
+}
+
+@mixin largeScreen {
+  @media screen and (max-width: $xlScreenPixel) {
+    @content;
+  }
+}
+
+@mixin mediumScreen {
+  @media screen and (max-width: $largeScreenPixel) {
+    @content;
+  }
+}
+
+@mixin smallScreen {
+  @media screen and (max-width: $mediumScreenPixel) {
+    @content;
+  }
+}
+
+@mixin xsScreen {
+  @media screen and (max-width: $smallScreenPixel) {
+    @content;
+  }
+}

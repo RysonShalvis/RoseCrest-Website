@@ -1,0 +1,31 @@
+@import "variables";
+
+.app {
+  background-color: $backgroundColor;
+
+  h1,
+  h2 {
+    margin: $spacing;
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  * {
+    font-family: "Alegreya SC", serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
