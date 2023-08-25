@@ -1,11 +1,13 @@
 @import "./variables";
 
 .header {
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $primaryColor;
+  z-index: 10;
 
   .logo-container {
     margin: $spacing;
@@ -17,7 +19,6 @@
   }
 
   .nav-container {
-    
   }
 
   .hamburger-menu {
@@ -31,7 +32,7 @@
     }
 
     @include mediumScreen {
-        display: none;
+      display: none;
     }
   }
 
@@ -42,9 +43,11 @@
     margin-top: $spacing;
     color: $secondaryColor;
     font-size: $largeTextFont;
+    align-items: flex-end;
+    right: 0;
 
     a {
-        margin: $spacing;
+      margin: $spacing;
     }
 
     &.active {
@@ -52,10 +55,10 @@
     }
 
     @include mediumScreen {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin: $spacing;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin: $spacing;
     }
   }
 }
