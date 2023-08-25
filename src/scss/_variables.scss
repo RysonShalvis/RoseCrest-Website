@@ -1,7 +1,7 @@
-$primaryColor: black;
-$secondaryColor: #eebc27;
-$backgroundColor: black;
-$textColor: white;
+$primaryColor: #39b54a;
+$secondaryColor: white;
+$backgroundColor: $secondaryColor;
+$textColor: $primaryColor;
 
 $spacing: 12px;
 
@@ -22,19 +22,19 @@ $smallScreenPixel: 480px;
 }
 
 @mixin largeScreen {
-  @media screen and (max-width: $xlScreenPixel) {
+  @media screen and (min-width: $largeScreenPixel) {
     @content;
   }
 }
 
 @mixin mediumScreen {
-  @media screen and (max-width: $largeScreenPixel) {
+  @media screen and (min-width: $mediumScreenPixel) {
     @content;
   }
 }
 
 @mixin smallScreen {
-  @media screen and (max-width: $mediumScreenPixel) {
+  @media screen and (min-width: $smallScreenPixel) {
     @content;
   }
 }

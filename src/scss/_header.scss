@@ -1,0 +1,61 @@
+@import "./variables";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primaryColor;
+
+  .logo-container {
+    margin: $spacing;
+    height: 48px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .nav-container {
+    
+  }
+
+  .hamburger-menu {
+    margin: $spacing;
+    > div {
+      background-color: $secondaryColor;
+      height: 4px;
+      width: 28px;
+      margin: 4px;
+      pointer-events: none;
+    }
+
+    @include mediumScreen {
+        display: none;
+    }
+  }
+
+  .link-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: $spacing;
+    color: $secondaryColor;
+    font-size: $largeTextFont;
+
+    a {
+        margin: $spacing;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    @include mediumScreen {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: $spacing;
+    }
+  }
+}
