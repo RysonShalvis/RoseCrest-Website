@@ -4,6 +4,7 @@ import AboutPage from "./AboutPage";
 import Header from "./Header";
 import LandingPage from "./LandingPage";
 import { Routes, Route } from "react-router-dom";
+import ServicesPage from "./ServicesPage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="services" element={<h1>Services</h1>} />
+        <Route path="services" element={<ServicesPage />} />
         <Route path="contact" element={<h1>Contact</h1>} />
       </Routes>
     </div>

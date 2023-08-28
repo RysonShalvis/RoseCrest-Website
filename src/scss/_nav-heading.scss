@@ -1,0 +1,27 @@
+@import "./variables";
+
+.nav-heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 500px;
+  background-color: black;
+
+  h1 {
+    position: relative;
+    font-size: $headerFont;
+    z-index: 2;
+    color: $secondaryColor;
+  }
+
+  img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 50%;
+  }
+}
