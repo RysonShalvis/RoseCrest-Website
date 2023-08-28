@@ -12,11 +12,11 @@ const LandingPage = () => {
 
       <div className="main-content">
         <div className="logo-container">
-            <img src={logo} />
+          <img src={logo} />
         </div>
         <h1>Filler header words</h1>
         <h2>Filler subheader words with extra words</h2>
-        <Button>Contact Now</Button>
+        <Button path="/contact">Contact Now</Button>
       </div>
     </div>
   );
