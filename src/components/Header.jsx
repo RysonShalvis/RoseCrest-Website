@@ -1,6 +1,7 @@
 import logo from "../media/filler-logo.png";
 import "../scss/_header.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState("");
@@ -20,10 +21,10 @@ const Header = () => {
           <div></div>
         </div>
         <div className={`link-container ${toggleMenu}`}>
-          <a>Home</a>
-          <a>About us</a>
-          <a>Services</a>
-          <a>Contact</a>
+          <Link to="/" >Home</Link>
+          <Link to ="/About" >About us</Link>
+          <Link to ="/Services" >Services</Link>
+          <Link to="/Contact" >Contact</Link>
         </div>
       </div>
     </div>
