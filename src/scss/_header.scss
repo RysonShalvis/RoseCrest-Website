@@ -1,7 +1,7 @@
 @import "./variables";
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,9 +16,6 @@
     img {
       height: 100%;
     }
-  }
-
-  .nav-container {
   }
 
   .hamburger-menu {

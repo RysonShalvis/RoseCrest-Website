@@ -1,7 +1,8 @@
 @import "./variables.scss";
 
 .landing-page {
-    height: 100vh;
+  position: relative;
+  height: calc(100vh - 78px);
 
   .background-video {
     position: absolute;
@@ -22,30 +23,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 100%;
     color: $secondaryColor;
     padding: $spacing;
 
     .logo-container {
-        height: 250px;
+      height: 250px;
 
-        img {
-            height: 100%;
-        }
+      img {
+        height: 100%;
+      }
     }
 
     h1 {
-        font-size: $subHeaderFont;
-        text-shadow: 4px 4px 6px #000;
-        text-align: center;
-        padding: $spacing
+      font-size: $subHeaderFont;
+      text-shadow: 4px 4px 6px #000;
+      text-align: center;
+      padding: $spacing;
     }
 
     h2 {
-        font-size: $largeTextFont;
-        text-shadow: 3px 3px 6px #000;
-        text-align: center;
-        padding: $spacing;
+      font-size: $largeTextFont;
+      text-shadow: 3px 3px 6px #000;
+      text-align: center;
+      padding: $spacing;
     }
   }
 }
