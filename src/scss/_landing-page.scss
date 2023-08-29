@@ -2,7 +2,7 @@
 
 .landing-page {
   position: relative;
-  height: calc(100vh - 78px);
+  height: 100vh;
 
   .background-video {
     position: absolute;
@@ -10,7 +10,7 @@
     width: 100%;
     overflow: hidden;
 
-    video {
+    img {
       width: 100%;
       object-fit: cover;
       height: 100%;
@@ -26,6 +26,7 @@
     height: 100%;
     color: $secondaryColor;
     padding: $spacing;
+    padding-top: 78px;
 
     .logo-container {
       height: 250px;
@@ -36,14 +37,14 @@
     }
 
     h1 {
-      font-size: $subHeaderFont;
+      font-size: $largeFont;
       text-shadow: 4px 4px 6px #000;
       text-align: center;
       padding: $spacing;
     }
 
     h2 {
-      font-size: $largeTextFont;
+      font-size: $mediumFont;
       text-shadow: 3px 3px 6px #000;
       text-align: center;
       padding: $spacing;

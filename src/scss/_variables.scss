@@ -1,4 +1,4 @@
-$primaryColor: #39b54a;
+$primaryColor: #69b539;
 $secondaryColor: white;
 $tertiaryColor: black;
 $backgroundColor: $secondaryColor;
@@ -11,9 +11,18 @@ $subHeaderFont: 40px;
 $largeTextFont: 30px;
 $textFont: 18px;
 
+$headerfontsize: 74px;
+$subheaderfontsize: 40px;
+
+$xlFont: 108px;
+$largeFont: 74px;
+$mediumFont: 40px;
+$smallFont: 30px;
+$xsFont: 18px;
+
 $xlScreenPixel: 1239px;
 $largeScreenPixel: 1023px;
-$mediumScreenPixel: 700px;
+$mediumScreenPixel: 750px;
 $smallScreenPixel: 480px;
 
 @mixin xlScreen {
