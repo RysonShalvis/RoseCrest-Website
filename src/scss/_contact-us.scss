@@ -1,5 +1,42 @@
 @import "./variables";
 
 .contact-us {
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px $primaryColor;
+    width: 80%;
+    padding: 24px;
+    flex-wrap: wrap;
+    margin-top: $spacing;
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: $spacing;
+
+      label,
+      input,
+      textarea {
+        margin: $spacing;
+        width: 100%;
+      }
+
+      &:not(.message) {
+        width: 50%;
+      }
+
+      &.message {
+        width: 100%;
+      }
+    }
+  }
 }
