@@ -63,6 +63,7 @@ export const ContactUs = () => {
             type="text"
             name="user_first_name"
             value={contact.firstName}
+            required
           />
         </div>
 
@@ -83,6 +84,7 @@ export const ContactUs = () => {
             type="email"
             name="user_email"
             value={contact.email}
+            required
           />
         </div>
 
@@ -102,6 +104,7 @@ export const ContactUs = () => {
             onChange={handleOnChange}
             name="message"
             value={contact.message}
+            required
           />
         </div>
 
