@@ -5,7 +5,7 @@ import image from "../media/st-george-2.jpeg";
 const AboutPage = () => {
   return (
     <div className="about-page">
-      <NavHeading image={image} title="About us..." />
+      <NavHeading image={image} className="hello" title="About us..." />
     </div>
   );
 };

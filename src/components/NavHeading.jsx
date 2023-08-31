@@ -1,7 +1,7 @@
 import "../scss/_nav-heading.scss";
 import PropTypes from "prop-types";
 
-const NavHeading = ({ image, title, className }) => {
+const NavHeading = ({ image, title, className = "" }) => {
   return (
     <div className={`nav-heading ${className}`}>
       <h1>{title}</h1>
