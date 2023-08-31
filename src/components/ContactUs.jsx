@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import "../scss/_contact-us.scss";
 import emailjs from "@emailjs/browser";
+import image from "../media/st-george-3.jpg";
+import Button from "./Button";
 
 export const ContactUs = () => {
   const form = useRef();
@@ -55,6 +57,9 @@ export const ContactUs = () => {
 
   return (
     <div className="contact-us">
+      <div className="background-image">
+        <img src={image} />
+      </div>
       <form ref={form} onSubmit={sendEmail}>
         <div className="input-container">
           <label>First Name</label>
@@ -108,7 +113,7 @@ export const ContactUs = () => {
           />
         </div>
 
-        <input type="submit" value="Send" />
+        <Button isSubmit value="Submit" />
       </form>
       {messageSent && <p>Your message has been sent successfully!</p>}
     </div>
