@@ -1,10 +1,12 @@
-import NavHeading from "./NavHeading"
-import image from "../media/about-us-filler-image.jpeg";
+import NavHeading from "./NavHeading";
+import image from "../media/st-george-4.jpeg";
 
 const ServicesPage = () => {
   return (
-    <div><NavHeading image={image} title="Services..." /></div>
-  )
-}
+    <div>
+      <NavHeading image={image} title="Services..." />
+    </div>
+  );
+};
 
-export default ServicesPage
+export default ServicesPage;

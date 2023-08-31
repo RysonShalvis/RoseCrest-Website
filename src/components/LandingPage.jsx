@@ -2,7 +2,7 @@
 import "../scss/_landing-page.scss";
 import logo from "../media/filler-logo.png";
 import Button from "./Button";
-import image from "../media/about-us-filler-image.jpeg";
+import image from "../media/st-george-image.jpeg";
 
 const LandingPage = () => {
   return (

@@ -1,6 +1,6 @@
 import "../scss/_about-page.scss";
 import NavHeading from "./NavHeading";
-import image from "../media/about-us-filler-image.jpeg";
+import image from "../media/st-george-2.jpeg";
 
 const AboutPage = () => {
   return (
