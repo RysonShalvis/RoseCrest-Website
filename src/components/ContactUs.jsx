@@ -62,7 +62,7 @@ export const ContactUs = () => {
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <div className="input-container">
-          <label>First Name</label>
+          <label>First Name *</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -83,7 +83,7 @@ export const ContactUs = () => {
         </div>
 
         <div className="input-container">
-          <label>Email</label>
+          <label>Email *</label>
           <input
             onChange={handleOnChange}
             type="email"
@@ -104,7 +104,7 @@ export const ContactUs = () => {
         </div>
 
         <div className="input-container message">
-          <label>Message</label>
+          <label>Message *</label>
           <textarea
             onChange={handleOnChange}
             name="message"

@@ -1,4 +1,4 @@
-import logo from "../media/filler-logo.png";
+import logo from "../media/rosecrest-logo.png";
 import "../scss/_header.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";

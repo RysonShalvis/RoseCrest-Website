@@ -1,8 +1,8 @@
 // import backgroundVideo from "../media/filler-landing-video.mp4";
 import "../scss/_landing-page.scss";
-import logo from "../media/filler-logo.png";
+import logo from "../media/rosecrest-logo.png";
 import Button from "./Button";
-import image from "../media/st-george-image.jpeg";
+import image from "../media/landing-page-image.jpg";
 
 const LandingPage = () => {
   return (
@@ -15,8 +15,8 @@ const LandingPage = () => {
         <div className="logo-container">
           <img src={logo} />
         </div>
-        <h1>&quot;It feels like Home&quot;</h1>
-        <h2>Accepts Medicaid New Waivers</h2>
+        <h1>Rosecrest Assisted Living</h1>
+        <h2>&quot;It feels like Home&quot;</h2>
         <Button path="/services">Learn more</Button>
       </div>
     </div>
