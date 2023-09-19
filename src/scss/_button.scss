@@ -5,4 +5,17 @@
   margin: $spacing;
   background-color: $tertiaryColor;
   color: $secondaryColor;
+
+  &.primary-color {
+    background-color: $primaryColor;
+    color: $tertiaryColor !important;
+  }
+
+  &.secondary-color {
+    background-color: $secondaryColor;
+  }
+
+  &.tertiary-color {
+    background-color: $tertiaryColor;
+  }
 }

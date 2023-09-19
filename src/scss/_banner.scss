@@ -1,0 +1,23 @@
+@import "./variables";
+
+.banner {
+    min-height: 380px;
+    background-color: $tertiaryColor;
+    color: $secondaryColor;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    p {
+        font-size: $largeTextFont;
+        margin: 24px;
+    }
+
+    .button-container {
+        align-self: flex-end;
+        padding: 96px;
+    }
+
+    
+}

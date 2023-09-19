@@ -2,7 +2,7 @@
 import "../scss/_landing-page.scss";
 import logo from "../media/rosecrest-logo.png";
 import Button from "./Button";
-import image from "../media/landing-page-image.jpg";
+import image from "../media/landing-page-2.jpg";
 
 const LandingPage = () => {
   return (
