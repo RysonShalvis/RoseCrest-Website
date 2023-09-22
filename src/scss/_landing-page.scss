@@ -1,54 +1,75 @@
-@import "./variables.scss";
+@import "./variables";
 
 .landing-page {
-  position: relative;
-  height: 100vh;
-  padding-top: 78px;
+  .gradient-banner {
+    height: 200px;
 
-  .background-video {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-
-    img {
+    .text-container {
+      display: flex;
+      color: $tertiaryColor;
+      height: 50%;
       width: 100%;
-      object-fit: cover;
-      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+      font-size: $smallFont;
+    }
+
+    .gradient-one,
+    .gradient-two {
+      height: 25%;
+      background-color: $primaryColor;
+    }
+
+    .gradient-one {
+      opacity: 25%;
+    }
+
+    .gradient-two {
+      opacity: 50%;
     }
   }
 
-  .main-content {
-    position: relative;
+  .split-section-variant {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    color: $secondaryColor;
-    padding: $spacing;
-    padding-top: 48px;
 
-    .logo-container {
-      height: 150px;
+    .image-container {
+      width: 50%;
 
       img {
+        object-fit: fill;
         height: 100%;
+        width: 100%;
       }
     }
 
-    h1 {
-      font-size: $largeFont;
-      text-shadow: 4px 4px 6px #000;
-      text-align: center;
-      padding: $spacing;
-    }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background-color: $primaryColorFifty;
+      color: $secondaryColor;
+      overflow: hidden;
+      width: 50%;
+      justify-content: flex-end;
 
-    h2 {
-      font-size: $mediumFont;
-      text-shadow: 3px 3px 6px #000;
-      text-align: center;
-      padding-bottom: $spacing;
+      h2 {
+        margin: 48px 48px 24px 48px;
+        font-size: $mediumFont;
+        text-align: center;
+      }
+
+      p {
+        margin: 24px 48px 48px 48px;
+        font-size: $xsFont;
+        text-align: center;
+        line-height: 1.5em;
+      }
+
+      img {
+        height: 50%;
+        width: 100%;
+        object-fit: fill;
+      }
     }
   }
 }

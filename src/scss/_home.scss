@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.home {
+  position: relative;
+  height: 100vh;
+  padding-top: 78px;
+
+  .background-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: $secondaryColor;
+    padding: $spacing;
+    padding-top: 48px;
+
+    .logo-container {
+      height: 150px;
+
+      img {
+        height: 100%;
+        filter: drop-shadow(-15px 10px 4px rgba(000,000,000, 0.5));
+      }
+    }
+
+    h1 {
+      font-size: $largeFont;
+      text-shadow: 4px 4px 6px #000;
+      text-align: center;
+      padding: $spacing;
+    }
+
+    h2 {
+      font-size: $mediumFont;
+      text-shadow: 3px 3px 6px #000;
+      text-align: center;
+      padding-bottom: $spacing;
+    }
+  }
+}

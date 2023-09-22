@@ -3,19 +3,13 @@
 .split-image-section {
   position: relative;
   display: flex;
-  min-height: 400px;
 
   &.image-right {
     flex-direction: row-reverse;
-
-    .text-container {
-      left: 0;
-    }
   }
 
   .image-container {
     width: 50%;
-    height: 100%;
 
     img {
       width: 100%;
@@ -26,11 +20,8 @@
 
   .text-container {
     padding: 24px;
-    position: absolute;
     width: 50%;
     background-color: $primaryColor;
-    right: 0;
-    top: -96px;
     color: $secondaryColor;
 
     h2 {
@@ -43,6 +34,11 @@
       font-size: $xsFont;
       text-align: center;
       line-height: 1.5em;
+    }
+
+    .button-container {
+      text-align: center;
+      padding: 24px;
     }
   }
 }

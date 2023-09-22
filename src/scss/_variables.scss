@@ -1,8 +1,10 @@
-$primaryColor: rgb(219,179,127);
+$primaryColor: rgb(210, 135, 86);
 $secondaryColor: white;
 $tertiaryColor: rgb(20, 148, 199);
 $backgroundColor: $secondaryColor;
 $textColor: $primaryColor;
+
+$primaryColorFifty: rgba($primaryColor, 0.5);
 
 $spacing: 12px;
 $headerSpacing: 78px;

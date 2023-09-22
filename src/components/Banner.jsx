@@ -1,18 +1,17 @@
 import "../scss/_banner.scss";
-import Button from "./Button";
+import PropTypes from "prop-types";
 
-const Banner = () => {
+
+const Banner = ({children}) => {
   return (
     <div className="banner">
-      <div>
-        <p>We accept Medicaid waivers</p>
-        <p>We work with Medicaid and VA insurance providers</p>
-      </div>
-      <div className="button-container">
-        <Button buttonColor="primary-color">Contact Now</Button>
-      </div>
+      {children}
     </div>
   );
 };
+
+Banner.propTypes = {
+  children: PropTypes.element
+}
 
 export default Banner;
