@@ -1,5 +1,19 @@
 @import "./variables";
 
 .about-page {
-    
+  .about-banner {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: $mediumFont;
+      line-height: 1.5em;
+    }
+
+    svg {
+      fill: white;
+      height: 100px;
+      transform: rotate(180deg);
+    }
+  }
 }

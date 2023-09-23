@@ -10,10 +10,12 @@
   background-color: black;
 
   h1 {
+    width: 50%;
     position: relative;
-    font-size: $headerFont;
+    font-size: $mediumFont;
     z-index: 2;
     color: $secondaryColor;
+    text-align: center;
   }
 
   img {
