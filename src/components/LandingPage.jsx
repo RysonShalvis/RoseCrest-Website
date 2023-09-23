@@ -23,13 +23,6 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <Home />
-      <Banner>
-        <p>
-          We accept Medicaid waivers. We work with Medicaid and VA insurance
-          providers.
-        </p>
-        <Button buttonColor="secondary-color">Learn More</Button>
-      </Banner>
       <SplitImageSection title={sectionOneTitle} image={splitImageOne}>
         <p>
           Rosecrest Assisted Living is a Level 1 residential home providing a

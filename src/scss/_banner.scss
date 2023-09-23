@@ -1,6 +1,7 @@
 @import "./variables";
 
 .banner {
+  position: relative;
   min-height: 100px;
   background-color: $tertiaryColor;
   color: $secondaryColor;
