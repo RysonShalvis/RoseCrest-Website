@@ -7,6 +7,10 @@ import splitImageTwo from "../media/section-two-image.webp";
 import splitImageLeft from "../media/section-three-left-image.webp";
 import splitImageBottom from "../media/section-three-bottom-image.webp";
 import cardImage from "../media/card-image.webp";
+import splitImageFour from "../media/section-four-image.webp";
+import splitImageFive from "../media/section-five-image.webp";
+import splitImageSix from "../media/section-six-image.webp";
+import splitImageSeven from "../media/section-seven-image.webp";
 import Button from "./Button";
 import Card from "./Card";
 
@@ -112,6 +116,41 @@ const LandingPage = () => {
         </Card>
         <img src={cardImage} />
       </div>
+      <Banner>What Makes US Special?</Banner>
+      <SplitImageSection
+        title="Personalized Care Plans"
+        image={splitImageFour}
+        imageRight
+      >
+        <p>
+          We understand that everyone&apos;s needs are different. Our care plans
+          are tailored to your unique requirements, ensuring you receive the
+          support you need, when you need it.
+        </p>
+      </SplitImageSection>
+      <SplitImageSection title="A Supportive Community" image={splitImageFive}>
+        <p>
+          Our residents and staff form a close-knit family. You&apos;ll quickly
+          build strong bonds and lasting friendships within our home.
+        </p>
+      </SplitImageSection>
+      <SplitImageSection
+        title="Family Involvement"
+        image={splitImageSix}
+        imageRight
+      >
+        <p>
+          We encourage family involvement and value their input. Your loved ones
+          are always welcome, and we strive to keep them informed and engaged in
+          your care.
+        </p>
+      </SplitImageSection>
+      <SplitImageSection title="Beautiful Surroundings" image={splitImageSeven}>
+        <p>
+          Our home is nestled in St. George, a peaceful and picturesque
+          location, providing a serene and calming atmosphere.
+        </p>
+      </SplitImageSection>
     </div>
   );
 };
