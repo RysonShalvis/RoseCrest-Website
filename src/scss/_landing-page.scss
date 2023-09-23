@@ -73,4 +73,32 @@
       }
     }
   }
+
+  .banner-container {
+    display: flex;
+
+    .banner-text-section {
+      text-align: center;
+      width: 50%;
+
+      h2 {
+        font-size: $mediumFont;
+        line-height: 1.5em;
+      }
+
+      p {
+        font-size: $xsFont;
+        line-height: 1.5em;
+      }
+
+      .button-container {
+        padding: 24px;
+      }
+    }
+
+    .image-container {
+      text-align: center;
+      width: 50%;
+    }
+  }
 }
