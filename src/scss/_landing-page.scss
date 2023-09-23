@@ -3,6 +3,7 @@
 .landing-page {
   .gradient-banner {
     height: 200px;
+    background-color: $primaryColorTen;
 
     .text-container {
       display: flex;
@@ -21,11 +22,11 @@
     }
 
     .gradient-one {
-      opacity: 25%;
+      background-color: $primaryColorTwentyFive;
     }
 
     .gradient-two {
-      opacity: 50%;
+      background-color: $primaryColorFifty;
     }
   }
 

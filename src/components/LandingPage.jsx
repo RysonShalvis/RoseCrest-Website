@@ -6,7 +6,9 @@ import splitImageOne from "../media/section-one-image.webp";
 import splitImageTwo from "../media/section-two-image.webp";
 import splitImageLeft from "../media/section-three-left-image.webp";
 import splitImageBottom from "../media/section-three-bottom-image.webp";
+import cardImage from "../media/card-image.webp";
 import Button from "./Button";
+import Card from "./Card";
 
 const LandingPage = () => {
   const sectionOneTitle =
@@ -77,7 +79,39 @@ const LandingPage = () => {
           <img src={splitImageBottom} alt="" />
         </div>
       </div>
-      <Banner><p>Why Choose Our Assisted Living Home?</p></Banner>
+      <Banner>
+        <p>Why Choose Our Assisted Living Home?</p>
+      </Banner>
+      <div className="card-layout">
+        <Card title="A True Home Feeling">
+          We believe that assisted living should never feel institutional.
+          That&apos;s why we&apos;ve designed our community to exude a sense of
+          comfort and familiarity. From cozy common areas to personalized living
+          spaces, every detail is carefully crafted to make you feel right at
+          home.
+        </Card>
+        <Card title="Very Affordable">
+          We are an approved provider for Medicaid&apos;s New Choices Waiver
+          Program. When you&apos;re approved for Medicaid New Choices Waiver
+          Program, the majority is paid for by Medicaid, with only a small room
+          and board fee.
+        </Card>
+        <Card title="Compassionate Care">
+          Our team of dedicated caregivers is genuinely caring. We help our
+          residents with medication management and healthcare coordination,
+          while respecting our resident&apos;s dignity and individuality.
+        </Card>
+        <Card title="Nutritious Dining">
+          Our Chef-Mom prepared meals are not only delicious, but also
+          nutritionally balanced. Our dining areas provide opportunities for
+          socializing over a delightful meal.
+        </Card>
+        <Card title="Safety and Security">
+          Your safety is our top priority. We have 24/7 trained staff available
+          around the clock to assist whenever needed.
+        </Card>
+        <img src={cardImage} />
+      </div>
     </div>
   );
 };
