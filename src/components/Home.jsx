@@ -2,7 +2,7 @@
 import "../scss/_home.scss";
 import logo from "../media/rosecrest-logo.png";
 import Button from "./Button";
-import image from "../media/landing-page-2.jpg";
+import image from "../media/test-home-image.jpeg";
 import Banner from "./Banner";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         <h2>&quot;It feels like Home&quot;</h2>
         <Button path="/services">Learn more</Button>
       </div>
-      <Banner>
+      <Banner className="home-banner">
         <p>
           We accept Medicaid waivers. We work with Medicaid and VA insurance
           providers.

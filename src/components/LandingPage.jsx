@@ -40,8 +40,12 @@ const LandingPage = () => {
           <p>&quot;I love the homemade food here.&quot;</p>
           <p>&quot;It feels like home.&quot;</p>
         </div>
-        <div className="gradient-one"></div>
-        <div className="gradient-two"></div>
+        <div className="gradient-one">
+          <p>&quot;I love the homemade food here.&quot;</p>
+        </div>
+        <div className="gradient-two">
+          <p>&quot;It feels like home.&quot;</p>
+        </div>
       </div>
       <SplitImageSection
         title={sectionTwoTitle}
@@ -65,15 +69,18 @@ const LandingPage = () => {
           <img src={splitImageLeft} alt="" />
         </div>
         <div className="text-container">
-          <h2>Welcome to Our Home-Like Assisted Living Community</h2>
-          <p>
-            At Rosecrest Assisted Living, we understand that home is where the
-            heart is, and we&apos;re dedicated to providing a warm and welcoming
-            environment that feels just like home. Our mission is to empower our
-            residents to live their best lives, offering the perfect blend of
-            assistance and independence in a setting that promotes comfort,
-            security, and a sense of belonging.
-          </p>
+          <div className="text-wrapper">
+            <h2>Welcome to Our Home-Like Assisted Living Community</h2>
+            <p>
+              At Rosecrest Assisted Living, we understand that home is where the
+              heart is, and we&apos;re dedicated to providing a warm and
+              welcoming environment that feels just like home. Our mission is to
+              empower our residents to live their best lives, offering the
+              perfect blend of assistance and independence in a setting that
+              promotes comfort, security, and a sense of belonging.
+            </p>
+          </div>
+
           <img src={splitImageBottom} alt="" />
         </div>
       </div>
@@ -161,7 +168,9 @@ const LandingPage = () => {
               today to learn more about how we can be your home away from home.
             </p>
             <div className="button-container">
-              <Button buttonColor="primary-color">Request an appointment</Button>
+              <Button buttonColor="primary-color">
+                Request an appointment
+              </Button>
             </div>
           </div>
           <div className="image-container">

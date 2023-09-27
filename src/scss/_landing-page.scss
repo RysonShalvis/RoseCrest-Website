@@ -5,6 +5,10 @@
     height: 200px;
     background-color: $primaryColorTen;
 
+    @include maxSmallScreen {
+      height: 150px;
+    }
+
     .text-container {
       display: flex;
       color: $tertiaryColor;
@@ -13,12 +17,46 @@
       justify-content: space-around;
       align-items: center;
       font-size: $smallFont;
+
+      @include maxMediumScreen {
+        height: 33.33%;
+
+        p:nth-child(2),
+        p:last-child {
+          display: none;
+        }
+      }
+
+      @include maxSmallScreen {
+        font-size: $xsFont;
+      }
     }
 
     .gradient-one,
     .gradient-two {
       height: 25%;
       background-color: $primaryColor;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @include maxMediumScreen {
+        height: 33.33%;
+      }
+
+      p {
+        display: none;
+
+        @include maxMediumScreen {
+          display: block;
+          color: $tertiaryColor;
+          font-size: $smallFont;
+        }
+
+        @include maxSmallScreen {
+          font-size: $xsFont;
+        }
+      }
     }
 
     .gradient-one {
@@ -36,6 +74,10 @@
     .image-container {
       width: 50%;
 
+      @include maxMediumScreen {
+        display: none;
+      }
+
       img {
         object-fit: fill;
         height: 100%;
@@ -52,6 +94,11 @@
       overflow: hidden;
       width: 50%;
       justify-content: flex-end;
+
+      @include maxMediumScreen {
+        flex-direction: column-reverse;
+        width: 100%;
+      }
 
       h2 {
         margin: 48px 48px 24px 48px;
@@ -77,9 +124,17 @@
   .banner-container {
     display: flex;
 
+    @include maxMediumScreen {
+      flex-direction: column;
+    }
+
     .banner-text-section {
       text-align: center;
       width: 50%;
+
+      @include maxMediumScreen {
+        width: 100%;
+      }
 
       h2 {
         font-size: $mediumFont;
@@ -99,6 +154,10 @@
     .image-container {
       text-align: center;
       width: 50%;
+
+      @include maxMediumScreen {
+        width: 100%;
+      }
     }
   }
 }

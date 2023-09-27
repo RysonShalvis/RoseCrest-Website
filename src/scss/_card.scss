@@ -1,10 +1,16 @@
 @import "./variables";
 
 .card-layout {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $primaryColor;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $primaryColor;
+  justify-content: center;
+
+  img {
+    @include maxSmallScreen {
+      width: 100%;
+    }
+  }
 }
 
 .card {

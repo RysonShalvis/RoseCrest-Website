@@ -5,6 +5,7 @@
   margin: $spacing;
   background-color: $tertiaryColor;
   color: $secondaryColor;
+  min-width: fit-content;
 
   &.primary-color {
     background-color: $primaryColor;

@@ -46,6 +46,10 @@
       text-shadow: 4px 4px 6px #000;
       text-align: center;
       padding: $spacing;
+
+      @include maxLargeScreen {
+        font-size: $mediumFont;
+      }
     }
 
     h2 {
@@ -53,6 +57,12 @@
       text-shadow: 3px 3px 6px #000;
       text-align: center;
       padding-bottom: $spacing;
+    }
+  }
+
+  .home-banner {
+    @include maxSmallScreen {
+      display: none;
     }
   }
 }

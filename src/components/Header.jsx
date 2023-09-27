@@ -16,7 +16,7 @@ const Header = () => {
         </div>
 
         <div className="nav-container">
-          <div onClick={handleOnClick} className="hamburger-menu">
+          <div onClick={handleOnClick} className={`hamburger-menu ${toggleMenu}`}>
             <div></div>
             <div></div>
             <div></div>

@@ -18,7 +18,6 @@
   justify-content: space-between;
   background-color: $primaryColor;
   height: $headerSpacing;
-  
 
   @include largeScreen {
     width: 75%;
@@ -37,12 +36,33 @@
 
   .hamburger-menu {
     margin: $spacing;
+
     > div {
+      position: relative;
       background-color: $secondaryColor;
       height: 4px;
       width: 28px;
       margin: 4px;
       pointer-events: none;
+      transition: all 500ms;
+    }
+
+    &.active {
+      > div:first-child {
+        width: 40px;
+        transform: rotate(225deg);
+        top: 4px;
+      }
+
+      > div:nth-child(2) {
+        display: none;
+      }
+
+      > div:last-child {
+        width: 40px;
+        transform: rotate(-225deg);
+        top: -4px;
+      }
     }
 
     @include mediumScreen {
@@ -51,21 +71,37 @@
   }
 
   .link-container {
+    display: flex;
     position: absolute;
-    display: none;
+    overflow: hidden;
     flex-direction: column;
-    margin-top: $spacing;
+    margin-top: 16px;
     color: $secondaryColor;
     font-size: $largeTextFont;
     align-items: flex-end;
     right: 0;
+    transition: height 500ms;
+    height: 0;
+
+    @include maxMediumScreen {
+      background-color: $primaryColorFifty;
+    }
 
     a {
       margin: $spacing;
+
+      @include mediumScreen {
+        display: block;
+      }
     }
 
     &.active {
-      display: flex;
+      @include maxMediumScreen {
+        height: 270px;
+        display: flex;
+        transition: height 500ms;
+        margin-top: 20px;
+      }
     }
 
     @include mediumScreen {
@@ -73,6 +109,7 @@
       display: flex;
       flex-direction: row;
       margin: $spacing;
+      height: initial;
     }
   }
 }

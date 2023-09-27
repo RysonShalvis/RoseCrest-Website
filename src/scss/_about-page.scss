@@ -5,15 +5,27 @@
     display: flex;
     align-items: center;
 
+    @include maxSmallScreen {
+      flex-direction: column-reverse;
+    }
+
     p {
       font-size: $mediumFont;
       line-height: 1.5em;
+
+      @include maxMediumScreen {
+        font-size: $smallFont;
+      }
     }
 
     svg {
       fill: white;
       height: 100px;
       transform: rotate(180deg);
+
+      @include maxSmallScreen {
+        display: none;
+      }
     }
   }
 }

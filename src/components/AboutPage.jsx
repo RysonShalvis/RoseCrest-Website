@@ -62,27 +62,25 @@ const AboutPage = () => {
           provide the most comfortable living conditions at an affordable price.
         </p>
       </SplitImageSection>
-      <Banner>
-        <div className="about-banner">
-          <img src={logo} />
-          <p>Schedule a tour today and discover your new home.</p>
-          <svg
-            preserveAspectRatio="xMidYMid meet"
-            data-bbox="20.1 20.6 159.1 159"
-            viewBox="20.1 20.6 159.1 159"
-            height="200"
-            width="200"
-            xmlns="http://www.w3.org/2000/svg"
-            data-type="shape"
-            role="presentation"
-            aria-hidden="true"
-            aria-label=""
-          >
-            <g>
-              <path d="M179.2 20.6l-39.8 79.5 39.8 79.5-159.1-79.5 159.1-79.5z"></path>
-            </g>
-          </svg>
-        </div>
+      <Banner className="about-banner">
+        <img src={logo} />
+        <p>Schedule a tour today and discover your new home.</p>
+        <svg
+          preserveAspectRatio="xMidYMid meet"
+          data-bbox="20.1 20.6 159.1 159"
+          viewBox="20.1 20.6 159.1 159"
+          height="200"
+          width="200"
+          xmlns="http://www.w3.org/2000/svg"
+          data-type="shape"
+          role="presentation"
+          aria-hidden="true"
+          aria-label=""
+        >
+          <g>
+            <path d="M179.2 20.6l-39.8 79.5 39.8 79.5-159.1-79.5 159.1-79.5z"></path>
+          </g>
+        </svg>
       </Banner>
     </div>
   );
