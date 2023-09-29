@@ -19,11 +19,20 @@ const AboutPage = () => {
       />
       <SplitImageSection image={imageOne} title="At Rosecrest Assisted Living">
         <p>
-          We believe that every resident deserves a place where they can truly
-          call home, while receiving the support they need to lead a fulfilling
-          life. Our home-feeling independent with some assistance assisted
-          living community is designed to provide you or your loved one with the
-          perfect blend of independence, comfort, and assistance.
+          We are Level 1 Care, our residents enjoy a high level of independence,
+          where they are self-reliant and do not require assistance with the
+          essential activities of daily living. These activities include
+          dressing, eating, bathing, moving, and using the restroom. We take
+          pride in providing a supportive and comfortable environment that
+          fosters independence and enables our residents to maintain their
+          freedom and dignity while enjoying the benefits of community living.
+          Our focus is on creating a safe and engaging atmosphere where
+          residents can thrive and continue to lead fulfilling lives on their
+          terms. We believe that every resident deserves a place where they can
+          truly call home, while receiving the support they need to lead a
+          fulfilling life. Our home-feeling independent with some assistance
+          assisted living community is designed to provide you or your loved one
+          with the perfect blend of independence, comfort, and assistance.
         </p>
       </SplitImageSection>
       <SplitImageSection

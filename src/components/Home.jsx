@@ -18,13 +18,11 @@ const Home = () => {
         </div>
         <h1>Rosecrest Assisted Living</h1>
         <h2>&quot;It feels like Home&quot;</h2>
+        <h2>The most affordable assisted living in town</h2>
         <Button path="/services">Learn more</Button>
       </div>
       <Banner className="home-banner">
-        <p>
-          We accept Medicaid waivers. We work with Medicaid and VA insurance
-          providers.
-        </p>
+        <p>We accept Medicaid&quot;s New Choice Waiver Program waivers.</p>
         <Button buttonColor="secondary-color">Learn More</Button>
       </Banner>
     </div>
