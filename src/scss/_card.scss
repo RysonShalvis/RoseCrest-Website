@@ -17,6 +17,11 @@
   width: 330px;
   margin: 48px;
 
+  @include maxMediumScreen {
+    width: 100%;
+    margin: $spacing;
+  }
+
   .card-container {
     padding: 24px;
     display: flex;
@@ -30,6 +35,10 @@
     color: $primaryColor;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 24px;
+
+    @include maxMediumScreen {
+      padding: $spacing;
+    }
   }
 
   p {
