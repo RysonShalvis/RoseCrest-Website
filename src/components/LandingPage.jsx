@@ -14,6 +14,7 @@ import splitImageSeven from "../media/section-seven-image.webp";
 import Button from "./Button";
 import Card from "./Card";
 import logo from "../media/rosecrest-logo.png";
+import GradientBanner from "./GradientBanner";
 
 const LandingPage = () => {
   const sectionOneTitle =
@@ -34,19 +35,11 @@ const LandingPage = () => {
           homes in the state.
         </p>
       </SplitImageSection>
-      <div className="gradient-banner">
-        <div className="text-container">
-          <p>&quot;I feel comfortable here.&quot;</p>
-          <p>&quot;I love the homemade food here.&quot;</p>
-          <p>&quot;It feels like home.&quot;</p>
-        </div>
-        <div className="gradient-one">
-          <p>&quot;I love the homemade food here.&quot;</p>
-        </div>
-        <div className="gradient-two">
-          <p>&quot;It feels like home.&quot;</p>
-        </div>
-      </div>
+      <GradientBanner
+        textOne='"I feel comfortable here."'
+        textTwo='"I love the homemade food here."'
+        textThree='"It feels like home."'
+      />
       <SplitImageSection
         title={sectionTwoTitle}
         imageRight

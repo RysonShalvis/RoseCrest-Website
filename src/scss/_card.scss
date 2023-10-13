@@ -17,6 +17,26 @@
   width: 330px;
   margin: 48px;
 
+  &.enclosed-card {
+    width: 450px;
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        color: $tertiaryColor;
+      }
+    }
+  }
+
   @include maxMediumScreen {
     width: 100%;
     margin: $spacing;
