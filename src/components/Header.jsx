@@ -1,10 +1,24 @@
 import logo from "../media/rosecrest-logo.png";
 import "../scss/_header.scss";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState("");
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setToggleMenu("");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [wrapperRef]);
 
   const handleOnClick = () => setToggleMenu(toggleMenu ? "" : "active");
 
@@ -15,8 +29,11 @@ const Header = () => {
           <img src={logo} />
         </div>
 
-        <div className="nav-container">
-          <div onClick={handleOnClick} className={`hamburger-menu ${toggleMenu}`}>
+        <div ref={wrapperRef} className="nav-container">
+          <div
+            onClick={handleOnClick}
+            className={`hamburger-menu ${toggleMenu}`}
+          >
             <div></div>
             <div></div>
             <div></div>

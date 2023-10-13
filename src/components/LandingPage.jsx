@@ -52,14 +52,17 @@ const LandingPage = () => {
         imageRight
         image={splitImageTwo}
       >
-        <p>
-          Deciding to move your mother or father to an assisted living facility
-          can be a hard decision. You have likely been stressed about it for
-          months. Let us take that burden off your mind. You will know you did
-          the right thing for your mom or dad knowing they feel peace and
-          comfort where they are living.
-        </p>
-        <p>Schedule a visit to see if we are a good fit for your family.</p>
+        <div>
+          <p>
+            Deciding to move your mother or father to an assisted living
+            facility can be a hard decision. You have likely been stressed about
+            it for months. Let us take that burden off your mind. You will know
+            you did the right thing for your mom or dad knowing they feel peace
+            and comfort where they are living.
+          </p>
+          <p>Schedule a visit to see if we are a good fit for your family.</p>
+        </div>
+
         <div className="button-container">
           <Button>Schedule Now</Button>
         </div>

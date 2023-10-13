@@ -8,9 +8,7 @@ const SplitImageSection = ({ imageRight, image, title, children }) => {
         <img src={image} alt="random" />
       </div>
       <div className="text-container">
-        <h2>
-          {title}
-        </h2>
+        <h2>{title}</h2>
         {children}
       </div>
     </div>
@@ -21,7 +19,7 @@ SplitImageSection.propTypes = {
   imageRight: PropTypes.bool,
   image: PropTypes.string,
   title: PropTypes.string,
-  children: PropTypes.element
+  children: PropTypes.node,
 };
 
 export default SplitImageSection;
