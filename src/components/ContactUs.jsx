@@ -48,6 +48,9 @@ export const ContactUs = () => {
             message: "",
           });
           setMessageSent(true);
+          setTimeout(() => {
+            setMessageSent(false);
+          }, "5000");
         },
         (error) => {
           console.log(error.text);
@@ -112,10 +115,13 @@ export const ContactUs = () => {
             required
           />
         </div>
-
         <Button isSubmit value="Submit" />
+        {messageSent && (
+          <p className="message-sent">
+            Your message has been sent successfully!
+          </p>
+        )}
       </form>
-      {messageSent && <p>Your message has been sent successfully!</p>}
     </div>
   );
 };

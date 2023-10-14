@@ -57,7 +57,7 @@ const LandingPage = () => {
         </div>
 
         <div className="button-container">
-          <Button>Schedule Now</Button>
+          <Button path="/Contact">Schedule Now</Button>
         </div>
       </SplitImageSection>
       <div className="split-section-variant">
@@ -164,7 +164,7 @@ const LandingPage = () => {
               today to learn more about how we can be your home away from home.
             </p>
             <div className="button-container">
-              <Button buttonColor="primary-color">
+              <Button path="/Contact" buttonColor="primary-color">
                 Request an appointment
               </Button>
             </div>
