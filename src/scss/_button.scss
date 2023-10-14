@@ -6,18 +6,48 @@
   background-color: $tertiaryColor;
   color: $secondaryColor;
   min-width: fit-content;
+  border: 1px solid transparent;
+  transition: all 250ms;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: $tertiaryColor !important;
+    border: 1px solid $tertiaryColor;
+  }
 
   &.primary-color {
     background-color: $primaryColor;
     color: $secondaryColor !important;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $primaryColor !important;
+      border: 1px solid $primaryColor;
+    }
   }
 
   &.secondary-color {
     background-color: $secondaryColor;
     color: $tertiaryColor !important;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $tertiaryColor;
+      color: $secondaryColor !important;
+      border: 1px solid $secondaryColor;
+    }
   }
 
   &.tertiary-color {
     background-color: $tertiaryColor;
+    color: $secondaryColor;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $tertiaryColor !important;
+      border: 1px solid $tertiaryColor;
+    }
   }
 }
