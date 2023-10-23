@@ -410,7 +410,7 @@ export const Apply = () => {
 
         <div className="input-container">
           <label>
-            Where you/they at another facility? If so, what did you like about
+            Were you/they at another facility? If so, what did you like about
             it? What did you dislike about it?
           </label>
           <input

@@ -25,9 +25,11 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="header">
-        <div className="logo-container">
-          <img src={logo} />
-        </div>
+        <Link to="/">
+          <div className="logo-container">
+            <img src={logo} />
+          </div>
+        </Link>
 
         <div ref={wrapperRef} className="nav-container">
           <div

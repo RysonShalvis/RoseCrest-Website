@@ -1,31 +1,29 @@
 @import "./variables";
 
 .services-page {
-  .services-banner {
+  .banner-container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    z-index: 10;
+    color: $tertiaryColor;
 
-    .banner-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 700px;
+    h2 {
+      font-size: $mediumFont;
+      text-align: center;
+    }
 
-      h2 {
-        font-size: $mediumFont;
-        text-align: center;
-      }
+    p {
+      font-size: $xsFont;
+      text-align: center;
+    }
 
-      p {
-        font-size: $xsFont;
-        text-align: center;
-      }
-
-      h2,
-      p {
-        margin: $spacing;
-      }
+    h2,
+    p {
+      margin: $spacing;
     }
   }
 
@@ -34,8 +32,8 @@
     padding: 0 192px;
 
     @include maxMediumScreen {
-        padding: 24px;
-        font-size: $smallFont;
+      padding: 24px;
+      font-size: $smallFont;
     }
   }
 }

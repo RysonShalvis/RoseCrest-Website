@@ -8,21 +8,23 @@ import Card from "./Card";
 const ServicesPage = () => {
   return (
     <div className="services-page">
-      <NavHeading image={image} title="Services..." />
-      <Banner className="services-banner">
-        <div className="banner-container">
-          <h2>Welcome to our community...</h2>
-          <p>
-            ...where we prioritize your comfort and well-being. Our range of
-            services is designed to make your life easier and more enjoyable,
-            ensuring you experience a comfortable home-style life. Whether
-            you&apos;re seeking assistance with medication distribution, craving
-            delicious home-cooked meals, or looking for help with personal
-            items, we&apos;ve got you covered.
-          </p>
-          <h2>Explore our services below:</h2>
-        </div>
-      </Banner>
+      <NavHeading
+        image={image}
+        custom={
+          <div className="banner-container">
+            <h2>Welcome to our community...</h2>
+            <p>
+              ...where we prioritize your comfort and well-being. Our range of
+              services is designed to make your life easier and more enjoyable,
+              ensuring you experience a comfortable home-style life. Whether
+              you&apos;re seeking assistance with medication distribution,
+              craving delicious home-cooked meals, or looking for help with
+              personal items, we&apos;ve got you covered.
+            </p>
+            <h2>Explore our services below:</h2>
+          </div>
+        }
+      />
       <GradientBanner equalHeight />
       <div className="card-layout">
         <Card title="Comfortable Home-Style Life" enclosedCard>
