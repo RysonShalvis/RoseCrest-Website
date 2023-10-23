@@ -148,6 +148,7 @@ export const Apply = () => {
         <img src={image} />
       </div>
       <form ref={form} onSubmit={sendEmail}>
+        <h1>Apply Now to Join our Wonderful In-Home Experience!</h1>
         <div className="input-container">
           <label>Date applying</label>
           <input

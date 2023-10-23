@@ -42,11 +42,13 @@
     h1 {
       font-size: $mediumFont;
       padding: $spacing;
+      text-align: center;
     }
 
     p {
       font-size: $xsFont;
       padding: $spacing;
+      text-align: center;
     }
 
     @include maxSmallScreen {
