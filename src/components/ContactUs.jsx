@@ -64,6 +64,23 @@ export const ContactUs = () => {
         <img src={image} />
       </div>
       <form ref={form} onSubmit={sendEmail}>
+        <h1>
+          Contact us today for a free tour and discover why we&apos;re the perfect
+          choice for your loved one.
+        </h1>
+        <p>
+          Our welcoming community, dedicated staff, and comprehensive services
+          are tailored to provide the comfort and care your mother or father
+          deserves. During the tour, you&apos;ll get a firsthand look at our
+          home-like environment, meet our compassionate team, and witness the
+          quality of life we offer.
+        </p>
+        <p>
+          We believe that seeing is believing, and we&apos;re confident that our warm
+          and inviting atmosphere will speak volumes about the exceptional care
+          we provide. Give your loved one the opportunity to be happy and enjoy
+          a fulfilling life with us.
+        </p>
         <div className="input-container">
           <label>First Name *</label>
           <input

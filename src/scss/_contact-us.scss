@@ -39,6 +39,16 @@
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 20px;
 
+    h1 {
+      font-size: $mediumFont;
+      padding: $spacing;
+    }
+
+    p {
+      font-size: $xsFont;
+      padding: $spacing;
+    }
+
     @include maxSmallScreen {
       width: 100%;
       padding: $spacing;
