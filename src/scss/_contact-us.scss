@@ -6,8 +6,10 @@
   justify-content: center;
   align-items: center;
   padding-top: $headerSpacing;
-  height: 100vh;
   width: 100%;
+  background-image: url("../media/st-george-3.jpg");
+  background-size: cover;
+
 
   .background-image {
     position: absolute;

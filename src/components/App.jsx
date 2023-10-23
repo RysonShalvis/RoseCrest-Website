@@ -6,6 +6,7 @@ import LandingPage from "./LandingPage";
 import { Routes, Route } from "react-router-dom";
 import ServicesPage from "./ServicesPage";
 import { ContactUs } from "./ContactUs";
+import { Apply } from "./Apply";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/apply" element={<h1>Apply Now</h1>} />
+        <Route path="/apply" element={<Apply />} />
       </Routes>
     </div>
   );
