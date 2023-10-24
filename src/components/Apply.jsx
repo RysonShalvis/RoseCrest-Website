@@ -95,10 +95,10 @@ export const Apply = () => {
 
     emailjs
       .sendForm(
-        "service_p7qqdj9",
-        "template_vw6ncbt",
+        "service_v5vo21l",
+        "template_v08fcs5",
         form.current,
-        "YixTBvDKz7M53m1G3"
+        "6vuCfCrMgIbMDNCZ-"
       )
       .then(
         (result) => {
@@ -172,7 +172,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>First Name *</label>
+          <label>First Name (Person filling out the application)</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -214,7 +214,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Relationship to Client *</label>
+          <label>Relationship to Applicant *</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -225,7 +225,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label> Client First Name *</label>
+          <label> Applicant First Name *</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -236,7 +236,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Last Name *</label>
+          <label>Applicant Last Name *</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -247,7 +247,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Date of Birth</label>
+          <label>Applicant Date of Birth</label>
           <input
             onChange={handleOnChange}
             type="date"
@@ -258,7 +258,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Sex</label>
+          <label>Applicant Sex</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -269,7 +269,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Marital Status</label>
+          <label>Applicant Marital Status</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -280,7 +280,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Email</label>
+          <label>Applicant Email</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -291,7 +291,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Current Address</label>
+          <label>Applicant Current Address</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -302,7 +302,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Client Health Conditions</label>
+          <label>Applicant Health Conditions</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -340,7 +340,7 @@ export const Apply = () => {
             description for each one Bathing, eating, dressing, ability to move,
             Continence, Toileting
           </label>
-          <input
+          <textarea
             onChange={handleOnChange}
             type="text"
             name="client_adl"
@@ -350,7 +350,7 @@ export const Apply = () => {
         </div>
 
         <div className="input-container">
-          <label>Do you/they need help managing medications?</label>
+          <label>Does the Resident need help managing medications?</label>
           <input
             onChange={handleOnChange}
             type="text"
@@ -362,7 +362,7 @@ export const Apply = () => {
 
         <div className="input-container">
           <label>
-            Are you/they approved for Medicaid&apos;s New Choices Wavier
+            Is the Applicant approved for Medicaid&apos;s New Choices Wavier
             Program?
           </label>
           <input
@@ -398,7 +398,7 @@ export const Apply = () => {
 
         <div className="input-container">
           <label>
-            Does the Client have any Food restrictions? If so, what?
+            Does the Applicant have any Food restrictions? If so, what?
           </label>
           <input
             onChange={handleOnChange}
@@ -411,10 +411,10 @@ export const Apply = () => {
 
         <div className="input-container">
           <label>
-            Were you/they at another facility? If so, what did you like about
-            it? What did you dislike about it?
+            Was the Applicant at another facility? If so, what did you like
+            about it? What did you dislike about it?
           </label>
-          <input
+          <textarea
             onChange={handleOnChange}
             type="text"
             name="client_facility"
