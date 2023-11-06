@@ -62,9 +62,13 @@ const ServicesPage = () => {
           surroundings fresh and inviting.
         </Card>
         <Card title="Scheduled Activities" enclosedCard>
-          Stay fresh and clean with our laundry facilities. We offer convenient
-          and well-equipped spaces for your laundry needs, so you can always
-          feel your best.
+          Stay engaged and socialize with a variety of scheduled activities from
+          religious sunday meetings to board games to our dish T.V services. We
+          offer a diverse range of options to keep you entertained.
+        </Card>
+        <Card title="Help with Personal Items" enclosedCard>
+          We understand that sometimes you need minor assistance with personal
+          tasks. Are caring staff is here to help with the occasional need.
         </Card>
       </div>
       <Banner>
