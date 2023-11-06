@@ -1,5 +1,5 @@
 import NavHeading from "./NavHeading";
-import image from "../media/services-image.webp";
+import image from "../media/facility images/IMG0004.jpg";
 import Banner from "./Banner";
 import "../scss/_services-page.scss";
 import GradientBanner from "./GradientBanner";

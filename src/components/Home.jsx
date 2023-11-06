@@ -2,7 +2,7 @@
 import "../scss/_home.scss";
 import logo from "../media/rosecrest-logo.png";
 import Button from "./Button";
-import image from "../media/test-home-image.jpeg";
+import image from "../media/st-george-image.jpeg";
 import Banner from "./Banner";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
         </div>
         <h1>Rosecrest Assisted Living</h1>
         <h2>&quot;It feels like Home&quot;</h2>
-        <h2>The most affordable assisted living in town</h2>
+        <h2>The most affordable assisted living in Saint George</h2>
         <Button path="/services">Learn more</Button>
       </div>
       <Banner className="home-banner">

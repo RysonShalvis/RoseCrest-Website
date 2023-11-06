@@ -9,7 +9,7 @@
     align-items: center;
     max-width: 700px;
     z-index: 10;
-    color: $tertiaryColor;
+    color: $secondaryColor;
 
     h2 {
       font-size: $mediumFont;
@@ -24,6 +24,10 @@
     h2,
     p {
       margin: $spacing;
+    }
+
+    img {
+        opacity: 50%;
     }
   }
 

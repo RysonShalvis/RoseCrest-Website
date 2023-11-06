@@ -1,9 +1,9 @@
 import "../scss/_about-page.scss";
 import NavHeading from "./NavHeading";
-import headerImage from "../media/about-us-image.webp";
+import headerImage from "../media/facility images/IMG0001.jpg";
 import SplitImageSection from "./SplitImageSection";
 import imageOne from "../media/about-one-image.webp";
-import imageTwo from "../media/about-two-image.webp";
+import imageTwo from "../media/facility images/IMG0007.jpg";
 import imageThree from "../media/about-three-image.webp";
 import imageFour from "../media/about-four-image.webp";
 import imageFive from "../media/about-five-image.webp";
