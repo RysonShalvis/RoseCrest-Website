@@ -1,38 +1,47 @@
 import "../scss/_gallery-page.scss";
 import ImageGallery from "react-image-gallery";
+import imageOne from "../media/facility images/IMG0001.jpg";
+import imageTwo from "../media/facility images/IMG0002.jpg";
+import imageThree from "../media/facility images/IMG0003.jpg";
+import imageFour from "../media/facility images/IMG0004.jpg";
+import imageFive from "../media/facility images/IMG0005.jpg";
+import imageSeven from "../media/facility images/IMG0007.jpg";
+import imageEight from "../media/facility images/IMG0008.jpg";
+import imageNine from "../media/facility images/IMG0009.jpg";
 
 const images = [
   {
-    original: "/src/media/facility images/IMG0001.jpg",
-    thumbnail: "/src/media/facility images/IMG0001.jpg",
+    original: imageOne,
+    thumbnail: imageOne,
   },
   {
-    original: "/src/media/facility images/IMG0002.jpg",
-    thumbnail: "/src/media/facility images/IMG0002.jpg",
+    original: imageTwo,
+    thumbnail: imageTwo,
   },
   {
-    original: "/src/media/facility images/IMG0003.jpg",
-    thumbnail: "/src/media/facility images/IMG0003.jpg",
+    original: imageThree,
+    thumbnail: imageThree,
   },
   {
-    original: "/src/media/facility images/IMG0004.jpg",
-    thumbnail: "/src/media/facility images/IMG0004.jpg",
+    original: imageFour,
+    thumbnail: imageFour,
+  },
+
+  {
+    original: imageFive,
+    thumbnail: imageFive,
   },
   {
-    original: "/src/media/facility images/IMG0005.jpg",
-    thumbnail: "/src/media/facility images/IMG0005.jpg",
+    original: imageSeven,
+    thumbnail: imageSeven,
   },
   {
-    original: "/src/media/facility images/IMG0007.jpg",
-    thumbnail: "/src/media/facility images/IMG0007.jpg",
+    original: imageEight,
+    thumbnail: imageEight,
   },
   {
-    original: "/src/media/facility images/IMG0008.jpg",
-    thumbnail: "/src/media/facility images/IMG0008.jpg",
-  },
-  {
-    original: "/src/media/facility images/IMG0009.jpg",
-    thumbnail: "/src/media/facility images/IMG0009.jpg",
+    original: imageNine,
+    thumbnail: imageNine,
   },
 ];
 
