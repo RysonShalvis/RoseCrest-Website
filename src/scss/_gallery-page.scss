@@ -1,0 +1,17 @@
+@import "./variables";
+@import "react-slideshow-image/dist/styles.css";
+@import "react-image-gallery/styles/scss/image-gallery.scss";
+
+.gallery-page {
+  background-color: $primaryColorFifty;
+  height: 100vh;
+
+  .image-gallery-content {
+    .image-gallery-slide {
+      .image-gallery-image {
+        max-height: calc(100vh - 170px);
+        margin-top: 90px;
+      }
+    }
+  }
+}
