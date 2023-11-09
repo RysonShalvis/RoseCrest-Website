@@ -10,6 +10,7 @@ const ServicesPage = () => {
     <div className="services-page">
       <NavHeading
         image={image}
+        darken
         custom={
           <div className="banner-container">
             <h2>Welcome to our community...</h2>

@@ -6,7 +6,7 @@ import splitImageOne from "../media/facility images/IMG0009.jpg";
 import splitImageTwo from "../media/section-two-image.webp";
 import splitImageLeft from "../media/facility images/IMG0005.jpg";
 import splitImageBottom from "../media/section-three-bottom-image.webp";
-import cardImage from "../media/card-image.webp";
+import cardImage from "../media/facility images/IMG0014.jpg";
 import splitImageFour from "../media/section-four-image.webp";
 import splitImageFive from "../media/section-five-image.webp";
 import splitImageSix from "../media/section-six-image.webp";
@@ -111,7 +111,7 @@ const LandingPage = () => {
           Your safety is our top priority. We have 24/7 trained staff available
           around the clock to assist whenever needed.
         </Card>
-        <img src={cardImage} />
+        <img className="card-image" src={cardImage} />
       </div>
       <Banner>
         <p>What Makes US Special?</p>

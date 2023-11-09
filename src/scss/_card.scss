@@ -7,6 +7,9 @@
   justify-content: center;
 
   img {
+    max-width: 427px;
+    max-height: 529px;
+
     @include maxSmallScreen {
       width: 100%;
     }
@@ -34,6 +37,7 @@
       p {
         color: $tertiaryColor;
       }
+    
     }
   }
 

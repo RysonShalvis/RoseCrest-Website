@@ -9,6 +9,12 @@
   height: 500px;
   background-color: black;
 
+  &.darken {
+    img {
+      opacity: 50%;
+    }
+  }
+
   h1 {
     width: 50%;
     position: relative;
