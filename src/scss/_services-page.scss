@@ -7,18 +7,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 700px;
+    max-width: 1000px;
     z-index: 10;
     color: $secondaryColor;
 
     h2 {
-      font-size: $mediumFont;
+      font-size: $mediumLargeFont;
       text-align: center;
     }
 
     p {
-      font-size: $xsFont;
+      font-size: $smallFont;
       text-align: center;
+    }
+
+    @include maxSmallScreen {
+      h2 {
+        font-size: $mediumFont;
+      }
+
+      p {
+        font-size: $xsFont;
+      }
     }
 
     h2,
