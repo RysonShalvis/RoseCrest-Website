@@ -22,7 +22,8 @@ const Home = () => {
         <Button path="/services">Learn more</Button>
       </div>
       <Banner className="home-banner">
-        <p>Find out if you qualify for the Waiver</p>
+        <p>Accept&apos;s Medicaid&apos;s &quot;New Choice&apos;s Waiver Program&quot;. Contact us today to see if you qualify for the waiver</p>
+        <Button path="/Contact">Contact Us</Button>
       </Banner>
     </div>
   );

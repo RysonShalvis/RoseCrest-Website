@@ -8,6 +8,7 @@
   overflow: hidden;
   height: 500px;
   background-color: black;
+  z-index: 0;
 
   &.darken {
     img {

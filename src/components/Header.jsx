@@ -7,6 +7,8 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState("");
   const wrapperRef = useRef(null);
 
+  const linkOnClick = () => setToggleMenu("");
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
@@ -41,12 +43,12 @@ const Header = () => {
             <div></div>
           </div>
           <div className={`link-container ${toggleMenu}`}>
-            <Link to="/">Home</Link>
-            <Link to="/About">About us</Link>
-            <Link to="/Services">Services</Link>
-            <Link to="/Contact">Contact</Link>
-            <Link to="/Apply">Apply Now</Link>
-            <Link to="/Gallery">Gallery</Link>
+            <Link onClick={linkOnClick} to="/">Home</Link>
+            <Link onClick={linkOnClick} to="/About">About us</Link>
+            <Link onClick={linkOnClick} to="/Services">Services</Link>
+            <Link onClick={linkOnClick} to="/Contact">Contact</Link>
+            <Link onClick={linkOnClick} to="/Apply">Apply Now</Link>
+            <Link onClick={linkOnClick} to="/Gallery">Gallery</Link>
           </div>
         </div>
       </div>
