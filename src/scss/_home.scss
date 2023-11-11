@@ -69,7 +69,7 @@
   }
 
   .home-banner {
-    @include maxSmallScreen {
+    @include maxLargeScreen {
       display: none;
     }
   }
