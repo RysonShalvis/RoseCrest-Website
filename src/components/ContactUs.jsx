@@ -72,6 +72,7 @@ export const ContactUs = () => {
           <p>Rosecrest Assisted Living</p>
           <p>(435)673-7398</p>
           <p>48 W 700 S St. George, UT</p>
+          <p>info@rosecresthome.com</p>
         </div>
 
         <div className="input-container">
