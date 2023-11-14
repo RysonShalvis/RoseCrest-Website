@@ -13,18 +13,22 @@ import splitImageSix from "../media/section-six-image.webp";
 import splitImageSeven from "../media/section-seven-image.webp";
 import Button from "./Button";
 import Card from "./Card";
-import logo from "../media/rosecrest-logo.png";
 import GradientBanner from "./GradientBanner";
 
 const LandingPage = () => {
-  const sectionOneTitle =
-    "We've Made our Assisted Living Center in Saint George, UT Feel Like Home";
+  const sectionOneTitle = (
+    <h2>
+      We&apos;ve Made our Assisted <br /> Living Center in <br />
+      Saint George, Utah
+      <br /> Feel Like Home
+    </h2>
+  );
   const sectionTwoTitle = "Put Your Mind at Ease";
 
   return (
     <div className="landing-page">
       <Home />
-      <SplitImageSection title={sectionOneTitle} image={splitImageOne}>
+      <SplitImageSection customTitle={sectionOneTitle} image={splitImageOne}>
         <p>
           Rosecrest Assisted Living is a Level 1 residential home providing a
           very comfortable and relaxing environment. We take pride in the fact
@@ -102,14 +106,14 @@ const LandingPage = () => {
           residents with medication management and healthcare coordination,
           while respecting our resident&apos;s dignity and individuality.
         </Card>
+        <Card title="Safety and Security">
+          Your safety is our top priority. We have 24/7 trained staff available
+          around the clock to assist whenever needed.
+        </Card>
         <Card title="Nutritious Dining">
           Our Chef-Mom prepared meals are not only delicious, but also
           nutritionally balanced. Our dining areas provide opportunities for
           socializing over a delightful meal.
-        </Card>
-        <Card title="Safety and Security">
-          Your safety is our top priority. We have 24/7 trained staff available
-          around the clock to assist whenever needed.
         </Card>
         <img className="card-image" src={cardImage} />
       </div>
@@ -150,30 +154,6 @@ const LandingPage = () => {
           location, providing a serene and calming atmosphere.
         </p>
       </SplitImageSection>
-      <Banner>
-        <div className="banner-container">
-          <div className="banner-text-section">
-            <h2>Schedule A Visit</h2>
-            <p>
-              We invite you to experience the warmth and home-like atmosphere of
-              Rosecrest Assisted Living firsthand. Schedule a tour today and see
-              for yourself how we can provide you or your loved one with the
-              perfect balance of assistance and independence in a loving and
-              supportive environment. At Rosecrest Assisted Living, we&apos;re
-              not just a place to live; we&apos;re a place to thrive. Contact us
-              today to learn more about how we can be your home away from home.
-            </p>
-            <div className="button-container">
-              <Button path="/Contact" buttonColor="primary-color">
-                Request an appointment
-              </Button>
-            </div>
-          </div>
-          <div className="image-container">
-            <img src={logo} />
-          </div>
-        </div>
-      </Banner>
     </div>
   );
 };

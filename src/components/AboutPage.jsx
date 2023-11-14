@@ -7,9 +7,9 @@ import imageTwo from "../media/facility images/IMG0007.jpg";
 import imageThree from "../media/about-three-image.webp";
 import imageFour from "../media/about-four-image.webp";
 import imageFive from "../media/about-five-image.webp";
-import logo from "../media/rosecrest-logo.png";
-import Banner from "./Banner";
-import { Link } from "react-router-dom";
+// import logo from "../media/rosecrest-logo.png";
+// import Banner from "./Banner";
+// import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -31,9 +31,7 @@ const AboutPage = () => {
           residents can thrive and continue to lead fulfilling lives on their
           terms. We believe that every resident deserves a place where they can
           truly call home, while receiving the support they need to lead a
-          fulfilling life. Our home-feeling independent with some assistance
-          assisted living community is designed to provide you or your loved one
-          with the perfect blend of independence, comfort, and assistance.
+          fulfilling life.
         </p>
       </SplitImageSection>
       <SplitImageSection
@@ -72,7 +70,7 @@ const AboutPage = () => {
           provide the most comfortable living conditions at an affordable price.
         </p>
       </SplitImageSection>
-      <Banner className="about-banner">
+      {/* <Banner className="about-banner">
         <img src={logo} />
         <p>Schedule a tour today and discover your new home.</p>
         <Link to="/Contact">
@@ -93,7 +91,7 @@ const AboutPage = () => {
             </g>
           </svg>
         </Link>
-      </Banner>
+      </Banner> */}
     </div>
   );
 };

@@ -7,22 +7,19 @@
   align-items: center;
   overflow: hidden;
   height: 500px;
-  background-color: black;
   z-index: 0;
-
-  &.darken {
-    img {
-      opacity: 40%;
-    }
-  }
+  -webkit-text-fill-color: $secondaryColor;
 
   h1 {
     width: 50%;
     position: relative;
     font-size: $mediumFont;
     z-index: 2;
-    color: $secondaryColor;
     text-align: center;
+
+    @include maxMediumScreen {
+      margin-top: 96px;
+    }
   }
 
   img {

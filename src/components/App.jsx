@@ -8,6 +8,7 @@ import ServicesPage from "./ServicesPage";
 import { ContactUs } from "./ContactUs";
 import { Apply } from "./Apply";
 import GalleryPage from "./GalleryPage";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/apply" element={<Apply />} />
         <Route path="/gallery" element={<GalleryPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

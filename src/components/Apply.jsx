@@ -156,7 +156,6 @@ export const Apply = () => {
             type="date"
             name="apply_date"
             value={contact.applicationDate}
-            required
           />
         </div>
 
@@ -167,7 +166,6 @@ export const Apply = () => {
             type="date"
             name="movein_date"
             value={contact.moveInDate}
-            required
           />
         </div>
 
@@ -199,7 +197,6 @@ export const Apply = () => {
             type="email"
             name="user_email"
             value={contact.email}
-            required
           />
         </div>
 
@@ -210,6 +207,7 @@ export const Apply = () => {
             type="text"
             name="user_phone"
             value={contact.phone}
+            required
           />
         </div>
 
@@ -220,7 +218,6 @@ export const Apply = () => {
             type="text"
             name="apply_relationship"
             value={contact.relationshp}
-            required
           />
         </div>
 
@@ -231,7 +228,6 @@ export const Apply = () => {
             type="text"
             name="client_first_name"
             value={contact.patientFirstName}
-            required
           />
         </div>
 
@@ -242,7 +238,6 @@ export const Apply = () => {
             type="text"
             name="client_last_name"
             value={contact.patientLastName}
-            required
           />
         </div>
 
@@ -253,7 +248,6 @@ export const Apply = () => {
             type="date"
             name="client_dob"
             value={contact.patientDOB}
-            required
           />
         </div>
 
@@ -264,7 +258,6 @@ export const Apply = () => {
             type="text"
             name="client_sex"
             value={contact.patientSex}
-            required
           />
         </div>
 
@@ -275,7 +268,6 @@ export const Apply = () => {
             type="text"
             name="marital_status"
             value={contact.patientMaritalStatus}
-            required
           />
         </div>
 
@@ -286,7 +278,6 @@ export const Apply = () => {
             type="text"
             name="client_email"
             value={contact.patientEmail}
-            required
           />
         </div>
 
@@ -297,7 +288,6 @@ export const Apply = () => {
             type="text"
             name="client_address"
             value={contact.patientAddress}
-            required
           />
         </div>
 
@@ -308,7 +298,6 @@ export const Apply = () => {
             type="text"
             name="client_conditions"
             value={contact.healthConditions}
-            required
           />
         </div>
 
@@ -319,7 +308,6 @@ export const Apply = () => {
             type="text"
             name="doctor_name"
             value={contact.doctorName}
-            required
           />
         </div>
 
@@ -330,7 +318,6 @@ export const Apply = () => {
             type="text"
             name="doctor_number"
             value={contact.doctorNumber}
-            required
           />
         </div>
 
@@ -345,7 +332,6 @@ export const Apply = () => {
             type="text"
             name="client_adl"
             value={contact.aDL}
-            required
           />
         </div>
 
@@ -356,13 +342,12 @@ export const Apply = () => {
             type="text"
             name="client_medication_help"
             value={contact.helpMedication}
-            required
           />
         </div>
 
         <div className="input-container">
           <label>
-            Is the Applicant approved for Medicaid&apos;s New Choices Wavier
+            Is the Applicant approved for Medicaid&apos;s New Choices Waiver
             Program?
           </label>
           <input
@@ -370,7 +355,6 @@ export const Apply = () => {
             type="text"
             name="waiver_approved"
             value={contact.approved}
-            required
           />
         </div>
 
@@ -381,7 +365,6 @@ export const Apply = () => {
             type="text"
             name="client_income"
             value={contact.income}
-            required
           />
         </div>
 
@@ -392,7 +375,6 @@ export const Apply = () => {
             type="text"
             name="client_help_pay"
             value={contact.helpPay}
-            required
           />
         </div>
 
@@ -405,7 +387,6 @@ export const Apply = () => {
             type="text"
             name="food_restrictions"
             value={contact.foodRestrictions}
-            required
           />
         </div>
 
@@ -419,7 +400,6 @@ export const Apply = () => {
             type="text"
             name="client_facility"
             value={contact.otherFacility}
-            required
           />
         </div>
 
@@ -430,7 +410,6 @@ export const Apply = () => {
             type="text"
             name="client_find_us"
             value={contact.findUs}
-            required
           />
         </div>
 
@@ -443,7 +422,6 @@ export const Apply = () => {
             onChange={handleOnChange}
             name="message"
             value={contact.message}
-            required
           />
         </div>
         <Button isSubmit value="Submit Application" />

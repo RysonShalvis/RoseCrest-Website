@@ -1,0 +1,52 @@
+@import "./variables";
+
+.footer {
+  .banner-container {
+    display: flex;
+
+    @include maxMediumScreen {
+      flex-direction: column;
+    }
+
+    .banner-text-section {
+      text-align: center;
+      width: 50%;
+
+      @include maxMediumScreen {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: $mediumFont;
+        line-height: 1.5em;
+      }
+
+      p {
+        font-size: $xsFont;
+        line-height: 1.5em;
+      }
+
+      .button-container {
+        padding: 24px;
+      }
+    }
+
+    .image-container {
+      text-align: center;
+      width: 50%;
+
+      img {
+        height: 150px;
+      }
+
+      p {
+        line-height: 30px;
+        margin: $spacing;
+      }
+
+      @include maxMediumScreen {
+        width: 100%;
+      }
+    }
+  }
+}

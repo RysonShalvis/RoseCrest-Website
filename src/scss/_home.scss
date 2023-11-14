@@ -8,6 +8,10 @@
   height: 100vh;
   padding-top: 78px;
 
+  @include maxLargeScreen {
+    height: initial;
+  }
+
   .background-video {
     position: absolute;
     height: 100%;
@@ -69,8 +73,8 @@
   }
 
   .home-banner {
-    @include maxLargeScreen {
-      display: none;
+    @include maxMediumScreen {
+      flex-direction: column;
     }
   }
 }

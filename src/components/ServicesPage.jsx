@@ -8,24 +8,21 @@ import Card from "./Card";
 const ServicesPage = () => {
   return (
     <div className="services-page">
-      <NavHeading
-        image={image}
-        darken
-        custom={
-          <div className="banner-container">
-            <h2>Welcome to our community...</h2>
-            <p>
-              ...where we prioritize your comfort and well-being. Our range of
-              services is designed to make your life easier and more enjoyable,
-              ensuring you experience a comfortable home-style life. Whether
-              you&apos;re seeking assistance with medication distribution,
-              craving delicious home-cooked meals, or looking for help with
-              personal items, we&apos;ve got you covered.
-            </p>
-            <h2>Explore our services below:</h2>
-          </div>
-        }
-      />
+      <NavHeading image={image} />
+      <Banner className="banner-container">
+
+          <h2>Welcome to our community...</h2>
+          <p>
+            ...where we prioritize your comfort and well-being. Our range of
+            services is designed to make your life easier and more enjoyable,
+            ensuring you experience a comfortable home-style life. Whether
+            you&apos;re seeking assistance with medication distribution, craving
+            delicious home-cooked meals, or looking for help with personal
+            items, we&apos;ve got you covered.
+          </p>
+          <h2>Explore our services below:</h2>
+ 
+      </Banner>
       <GradientBanner equalHeight />
       <div className="card-layout">
         <Card title="Comfortable Home-Style Life" enclosedCard>
@@ -64,20 +61,20 @@ const ServicesPage = () => {
         </Card>
         <Card title="Scheduled Activities" enclosedCard>
           Stay engaged and socialize with a variety of scheduled activities from
-          religious sunday meetings to board games to our dish T.V services. We
+          religious Sunday meetings to board games to our dish TV services. We
           offer a diverse range of options to keep you entertained.
         </Card>
         <Card title="Help with Personal Items" enclosedCard>
           We understand that sometimes you need minor assistance with personal
-          tasks. Are caring staff is here to help with the occasional need.
+          tasks. Our caring staff is here to help with the occasional need.
         </Card>
       </div>
-      <Banner>
+      {/* <Banner>
         <p className="bottom-services-banner">
           Experience the best of care and comfort - choose Rosecrest Assisted
           Living today!
         </p>
-      </Banner>
+      </Banner> */}
     </div>
   );
 };
