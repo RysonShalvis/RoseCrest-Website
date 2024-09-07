@@ -3,16 +3,17 @@ import ImageGallery from "react-image-gallery";
 
 const images = import.meta.glob("/src/media/rosecrest-gallery/*.jpg");
 const imageList = Object.keys(images); //.map((image) => images(image));
+console.log(imageList);
 
 const objectArray = imageList.map((image) => {
   let array = image.split("");
   array.splice(11, 17, "image-gallery-thumbnails");
   array.splice(array.length - 4, 0, "-min");
-  let string = array.join("");
-  
+  let thumbnail = array.join("");
+
   return {
     original: image,
-    thumbnail: string,
+    thumbnail: thumbnail,
   };
 });
 
