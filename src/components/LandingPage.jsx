@@ -2,7 +2,7 @@ import "../scss/_landing-page.scss";
 import Home from "./Home";
 import Banner from "./Banner";
 import SplitImageSection from "./SplitImageSection";
-import splitImageOne from "../media/facility images/IMG0009.jpg";
+import splitImageOne from "../media/rosecrest-gallery/Front1.jpg";
 import splitImageTwo from "../media/section-two-image.webp";
 import splitImageLeft from "../media/facility images/IMG0005.jpg";
 import splitImageBottom from "../media/section-three-bottom-image.webp";
