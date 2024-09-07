@@ -9,9 +9,13 @@
   .image-gallery-content {
     .image-gallery-slide {
       .image-gallery-image {
-        max-height: calc(100vh - 170px);
+        max-height: calc(100vh - 175px);
         margin-top: 90px;
       }
     }
+  }
+
+  .image-gallery-thumbnail-image {
+    max-height: 69px;
   }
 }

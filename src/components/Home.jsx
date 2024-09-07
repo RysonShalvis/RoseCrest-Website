@@ -25,10 +25,7 @@ const Home = () => {
         <Button path="/services">Learn more</Button>
       </div>
       <Banner className="home-banner">
-        <p>
-          Accept&apos;s Medicaid&apos;s &quot;New Choice&apos;s Waiver
-          Program&quot;. Contact us to see if you qualify for the waiver
-        </p>
+        <p>We Accept Medicaids&apos; New Choices Waiver Program</p>
         <Button buttonColor="secondary-color" path="/Contact">
           Contact Us
         </Button>
